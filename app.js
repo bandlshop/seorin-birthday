@@ -288,6 +288,7 @@ openingVideo.addEventListener('ended', () => {
     }, 800);
   }
 });
+}
 
 function setupScrollAnimation() {
   const io = new IntersectionObserver((entries) => {
