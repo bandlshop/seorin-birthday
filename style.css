@@ -21,6 +21,9 @@ body{
 section{padding:54px 28px;text-align:center}
 .hero{
   position:relative;
+  padding:0 0 36px;
+  min-height:420px;
+  overflow:hidden;
 }
 
 .hero video{
@@ -33,12 +36,12 @@ section{padding:54px 28px;text-align:center}
 
 .hero-cover{
   position:absolute;
-  inset:0 0 36px 0;
+  inset:0;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  background:rgba(255,247,244,.88);
+  background:rgba(255,247,244,.62);
   z-index:2;
 }
 

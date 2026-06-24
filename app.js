@@ -88,7 +88,8 @@ function renderInvite(data) {
 
   const video = document.getElementById('openingVideo');
   video.poster = data.openingPoster || '';
-  video.innerHTML = `<source src="${data.openingVideo}" type="video/mp4" />`;
+video.src = data.openingVideo;
+video.load();
 
   document.getElementById('brand').textContent = data.brand || '';
   document.getElementById('heroDate').innerHTML = `${data.event.dateText}<br>${data.event.placeName}`;
@@ -274,7 +275,11 @@ startBtn.addEventListener('click', () => {
 
   openingVideo.muted = false;
   openingVideo.currentTime = 0;
-  openingVideo.play();
+
+  openingVideo.play().catch((error) => {
+    console.log('영상 재생 실패:', error);
+    alert('영상 재생이 차단되었습니다. 다시 한 번 눌러주세요.');
+  });
 });
 
 openingVideo.addEventListener('ended', () => {
