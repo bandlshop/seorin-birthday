@@ -4,8 +4,8 @@ const inviteData = {
 
   // 첫 화면 동화책 오프닝 영상 1개만 사용합니다.
   // assets 폴더에 intro.mp4 파일을 넣고 아래 파일명만 맞춰주세요.
-  openingVideo: "https://blog.naver.com/bandlshop/222140599530",
-  openingPoster: "https://placehold.co/430x620/fde9e6/777?text=Opening+Video",
+  openingVideo: "./assets/intro.mp4",
+  openingPoster: "./assets/opening_poster.jpg",
 
   event: {
     dateText: "2026년 12월 12일 토요일 오후 5시",
@@ -265,7 +265,7 @@ function setupEvents(data) {
   document.getElementById('shareBtn').addEventListener('click', sharePage);
   document.getElementById('musicBtn').addEventListener('click', () => alert('배경음악 파일을 연결하면 ON/OFF 기능으로 바꿀 수 있어요.'));
 
-  const openingVideo = document.getElementById('openingVideo');
+const openingVideo = document.getElementById('openingVideo');
 const startBtn = document.getElementById('startBtn');
 const heroCover = document.getElementById('heroCover');
 
@@ -273,6 +273,7 @@ startBtn.addEventListener('click', () => {
   heroCover.classList.add('hide');
 
   openingVideo.muted = false;
+  openingVideo.currentTime = 0;
   openingVideo.play();
 });
 
