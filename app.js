@@ -8,7 +8,7 @@ const inviteData = {
   openingPoster: "./assets/opening_poster.jpg",
 
   event: {
-    dateText: "2026년 12월 5일 토요일 오후 5시",
+    dateText: "2026년 12월 12일 토요일 오후 5시",
     monthTitle: "12월",
     day: "12",
     placeName: "더블유 파티",
