@@ -8,16 +8,17 @@
 }
 *{box-sizing:border-box}
 body{
-  margin:0;
-   background:
-    url('./assets/all_bg.jpg')
-    repeat
-    center top;
+  margin:0;   
   font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
   color:var(--ink);
   letter-spacing:-.02em;
 }
-.phone{max-width:430px;margin:0 auto;background:#fff;min-height:100vh;box-shadow:0 0 25px rgba(255,255,255,.92);overflow:hidden}
+.phone{max-width:430px;margin:0 auto;
+  background:
+    url('./assets/all_bg.png')
+    repeat
+    center top;
+    min-height:100vh;box-shadow:0 0 25px rgba(255,255,255,.92);overflow:hidden}
 section{padding:54px 28px;text-align:center}
 .hero{
   position:relative;
@@ -67,13 +68,13 @@ section{padding:54px 28px;text-align:center}
 .brand{font-family:Georgia,serif;color:var(--accent);font-size:26px;margin:24px 0 12px}
 .date{font-size:14px;line-height:1.8}
 .title{font-size:18px;color:var(--accent);margin-bottom:26px;font-weight:600}
-.message{font-size:15px;line-height:2.1}
+.message{font-size:15px;line-height:2.5}
 .photo{width:100%;border-radius:4px;margin:20px 0;display:block}
 #monthTitle{color:var(--accent);font-weight:500}
-.calendar{font-size:14px;border-collapse:collapse;width:100%;margin-top:20px}
-.calendar th{font-weight:400;color:#aaa;padding:8px}
-.calendar td{padding:8px;text-align:center}
-.calendar .on{background:var(--accent);color:#fff;border-radius:50%;display:inline-block;width:28px;height:28px;line-height:28px;padding:0}
+.calendar{font-size:14px;border-collapse:collapse;width:100%;margin-top:20px; border:1px solid #fdf2f1;}
+.calendar th{font-weight:400;color:#fff;padding:8px; border:1px solid #fdf2f1;background:#f7cdc9;border:1px solid #fff;}
+.calendar td{padding:8px;text-align:center; border:1px solid #fdf2f1;background:#fff;height:50px;}
+.calendar .on{background:var(--accent);color:#fff;border-radius:50%;display:inline-block;width:30px;height:30px;line-height:30px;padding:0}
 .timeline{position:relative;text-align:left;margin:20px 0}
 .timeline:before{
   content:"";
@@ -147,7 +148,7 @@ section{padding:54px 28px;text-align:center}
 .float button{width:42px;height:42px;border-radius:50%;border:0;background:#eee;color:#999}
 .music{position:fixed;right:18px;top:18px;z-index:3;background:#fff;border:0;border-radius:999px;width:38px;height:38px;box-shadow:0 3px 14px rgba(0,0,0,.12)}
 .small{font-size:12px;color:#aaa}
-.fade{opacity:0;transform:translateY(20px);transition:.7s}
+.fade{opacity:0;transform:translateY(20px);transition:.7s; img-align:center;}
 .fade.show{opacity:1;transform:none}
 @media (max-width:360px){section{padding-left:22px;padding-right:22px}.brand{font-size:23px}.message{font-size:14px}}
 

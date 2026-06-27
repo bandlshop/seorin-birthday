@@ -8,7 +8,7 @@ const inviteData = {
   openingPoster: "./assets/opening_poster.jpg",
 
   event: {
-    dateText: "2026년 12월 12일 토요일 오후 5시",
+    dateText: "2026년 12월 5일 토요일 오후 5시",
     monthTitle: "12월",
     day: "12",
     placeName: "더블유 파티",
@@ -92,11 +92,11 @@ video.src = data.openingVideo;
 video.load();
 
   document.getElementById('brand').textContent = data.brand || '';
-  document.getElementById('heroDate').innerHTML = `${data.event.dateText}<br>${data.event.placeName}`;
+  //document.getElementById('heroDate').innerHTML = `${data.event.dateText}<br>${data.event.placeName}`;
   document.getElementById('introMessage').innerHTML = data.introMessage;
-  document.getElementById('familyPhoto').src = data.familyPhoto;
-  document.getElementById('familyText').innerHTML = `아빠 ${data.parents.father} · 엄마 ${data.parents.mother}<br>그리고 사랑스러운 ${data.baby.name}`;
-  document.getElementById('eventInfo').innerHTML = `${data.event.dateText}<br>${data.event.placeName}`;
+  //document.getElementById('familyPhoto').src = data.familyPhoto;
+  document.getElementById('familyText').innerHTML = `아빠 <b>${data.parents.father}</b> · 엄마 <b>${data.parents.mother}</b><br>& 사랑스러운 <b>${data.baby.name}</b>`;
+  //document.getElementById('eventInfo').innerHTML = `${data.event.dateText}<br>${data.event.placeName}`;
   document.getElementById('babyPhoto').src = data.babyPhoto;
   document.getElementById('monthTitle').textContent = data.event.monthTitle;
   document.getElementById('calendarWrap').innerHTML = createCalendar(data.event.day);
